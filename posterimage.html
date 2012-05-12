@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+		/* General page styles */
+		body{
+			font-family:arial,sans-serif;
+			font-size:12px;
+		}
+		#video1, #video2{
+			margin-bottom:30px;
+		}
+	</style>
+	
+
+</head>
+<body>
+
+
+	<div id="video1" class="poster">
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/FrHkKXFRbCI" frameborder="0" allowfullscreen></iframe>
+	</div>
+<pre>
+$('#video1.poster').posterimage({
+	image: 'keep-calm-and-carryon.png',
+	title: 'Click to watch "Keep calm and carry on"',
+	title_color: '#fff',
+	title_backgroundcolor: '#222',
+	credits: true,
+	autoplay: true
+});
+</pre>
+	
+	<div id="video2" class="poster">
+		<iframe src="http://player.vimeo.com/video/10107253?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	</div>
+<pre>
+$('#video2.poster').posterimage({
+	image: 'loose-world.png',
+	title: 'Play - Reggie Watts "Fuck shit stack"',
+	title_color: '#222',
+	title_backgroundcolor: '#fff',
+	credits: false,
+	autoplay: true
+});	
+</pre>
+
+	
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.posterimage.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){	
+	$('#video1.poster').posterimage({
+		image: 'keep-calm-and-carryon.png',
+		title: 'Click to watch "Keep calm and carry on"',
+		title_color: '#fff',
+		title_backgroundcolor: '#222',
+		credits: true,
+		autoplay: true
+	});
+	$('#video2.poster').posterimage({
+		image: 'loose-world.png',
+		title: 'Play - Reggie Watts "Fuck shit stack"',
+		title_color: '#222',
+		title_backgroundcolor: '#fff',
+		credits: false,
+		autoplay: true
+	});
+});
+</script>			
+</body>
+</html>
